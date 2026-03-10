@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export function FloatingOrbs() {
     return (
@@ -107,17 +107,34 @@ export function MouseGlow() {
 }
 
 export function ParticleField() {
+    const [particles, setParticles] = useState<{ id: number, left: string, top: string, animDuration: string, animDelay: string }[]>([])
+
+    useEffect(() => {
+        // Gera as partículas apenas no cliente após a montagem para evitar erro de hidratação
+        const newParticles = Array.from({ length: 20 }).map((_, i) => ({
+            id: i,
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+            animDuration: `${8 + Math.random() * 12}s`,
+            animDelay: `${Math.random() * 8}s`
+        }))
+        setParticles(newParticles)
+    }, [])
+
+    // Não renderiza nada no servidor para essas partículas aleatórias
+    if (particles.length === 0) return null
+
     return (
         <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-            {Array.from({ length: 20 }).map((_, i) => (
+            {particles.map((p) => (
                 <div
-                    key={i}
+                    key={p.id}
                     className="absolute w-[2px] h-[2px] bg-white/20 rounded-full"
                     style={{
-                        left: `${Math.random() * 100}%`,
-                        top: `${Math.random() * 100}%`,
-                        animation: `particle-float ${8 + Math.random() * 12}s ease-in-out infinite`,
-                        animationDelay: `${Math.random() * 8}s`,
+                        left: p.left,
+                        top: p.top,
+                        animation: `particle-float ${p.animDuration} ease-in-out infinite`,
+                        animationDelay: p.animDelay,
                     }}
                 />
             ))}
