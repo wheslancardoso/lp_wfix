@@ -138,10 +138,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </AnimateIn>
 
             <AnimateIn delay={0.4}>
-              <Button size="lg" className="h-14 px-10 text-base font-black uppercase tracking-widest rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 transform hover:scale-105 animate-glow-green" asChild>
-                <Link href={whatsappLink} target="_blank" id="cta-whatsapp-hero">
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Iniciar Conversa
+              <Button size="lg" id="cta-whatsapp-hero" className="h-14 px-10 text-base font-black uppercase tracking-widest rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 transform hover:scale-105 animate-glow-green" asChild>
+                <Link href={whatsappLink} target="_blank">
+                  <MessageCircle className="mr-2 h-5 w-5 pointer-events-none" />
+                  <span className="pointer-events-none">Iniciar Conversa</span>
                 </Link>
               </Button>
             </AnimateIn>
@@ -164,12 +164,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   id="cta-whatsapp-card"
                   className="card-3d card-glow-border group bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 p-8 rounded-[30px] flex flex-col items-center text-center"
                 >
-                  <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mb-6 shadow-[0_0_25px_rgba(34,197,94,0.3)] group-hover:shadow-[0_0_50px_rgba(34,197,94,0.5)] transition-all duration-500 animate-float-subtle">
-                    <MessageCircle className="w-7 h-7 text-green-500 fill-green-500 group-hover:scale-110 transition-transform duration-300" />
+                  <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-500/20 group-hover:scale-110 transition-all duration-300 pointer-events-none">
+                    <MessageCircle className="w-7 h-7 text-green-400 pointer-events-none" />
                   </div>
-                  <h2 className="text-xl font-black uppercase mb-2 text-white">WhatsApp</h2>
-                  <p className="text-[9px] uppercase font-bold tracking-widest text-white/30 mb-6">Resposta em até 3 min</p>
-                  <span className="bg-white text-black text-[9px] font-black px-6 py-2 rounded-full uppercase tracking-widest group-hover:bg-green-500 group-hover:text-white transition-colors duration-300 group-hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]">
+                  <h2 className="text-xl font-black uppercase mb-2 pointer-events-none text-white">WhatsApp</h2>
+                  <p className="text-[9px] uppercase font-bold tracking-widest text-white/30 mb-6 pointer-events-none">Resposta em 5 minutos</p>
+                  <span className="bg-white/5 text-[9px] font-black px-6 py-2 rounded-full uppercase tracking-widest group-hover:bg-green-500 group-hover:text-black transition-colors pointer-events-none text-white">
                     Iniciar Conversa
                   </span>
                 </Link>
@@ -336,13 +336,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         {/* BOTÃO FLUTUANTE WHATSAPP */}
         <a
-          id="cta-whatsapp-float"
           href={whatsappLink}
           target="_blank"
-          className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] rounded-full hover:scale-110 transition-all duration-300"
-          style={{ animation: 'pulse-whatsapp 2s ease-in-out infinite' }}
+          rel="noopener noreferrer"
+          id="cta-whatsapp-flutuante"
+          className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-green-500 rounded-full shadow-[0_4px_30px_rgba(34,197,94,0.4)] hover:bg-green-400 hover:scale-110 transition-all duration-300 group"
         >
-          <MessageCircle className="w-7 h-7 text-white fill-white" />
+          {/* Tooltip */}
+          <div className="absolute right-full mr-4 px-4 py-2 bg-zinc-900 border border-white/10 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            <p className="text-sm font-bold text-white uppercase tracking-wider pointer-events-none">Fale Conosco</p>
+            <div className="absolute top-1/2 -right-1 -translate-y-1/2 w-2 h-2 bg-zinc-900 border-t border-r border-white/10 rotate-45 pointer-events-none" />
+          </div>
+
+          {/* Ripple effect */}
+          <div className="absolute inset-0 rounded-full animate-ping bg-green-500/30 pointer-events-none" />
+
+          <MessageCircle className="w-6 h-6 text-white pointer-events-none" />
         </a>
       </main>
 
