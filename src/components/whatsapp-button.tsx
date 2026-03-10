@@ -59,14 +59,14 @@ Confirmo o recebimento da sua peça. ✅
 
 *OS #${osNumber}*
 
-Vou iniciar o reparo agora. Te aviso assim que estiver pronto!
+Vou iniciar o procedimento agora. Te aviso assim que estiver pronto!
 
 _WTECH Soluções em Tecnologia_`
 
         case 'in_progress':
             return `Olá ${firstName}! 👋
 
-Seu equipamento está em reparo! 🔧
+Seu equipamento está em análise! 🔧
 
 *OS #${osNumber}*
 

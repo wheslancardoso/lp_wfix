@@ -76,7 +76,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div className="absolute inset-0 bg-black">
             <Image
               src="/hero/hero_notebook_pro.png"
-              alt="Manutenção Placa Mãe"
+              alt="Análise de Placa Mãe"
               fill
               quality={100}
               className="object-cover object-[center_35%] md:object-[center_40%] brightness-[0.5] contrast-[1.1] md:blur-[2px] animate-hero-bg-1 opacity-0 absolute"
@@ -89,7 +89,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             />
             <Image
               src="/hero/hero_gamer_pc_setup_v2.png"
-              alt="Manutenção Interna Notebook"
+              alt="Otimização Interna Notebook"
               fill
               quality={100}
               className="object-cover object-center md:object-[center_30%] brightness-[0.5] contrast-[1.1] md:blur-[2px] animate-hero-bg-2 opacity-0 absolute"
