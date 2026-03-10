@@ -75,7 +75,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {/* Imagens de fundo alternadas (Fundo animado gerado por IA) */}
           <div className="absolute inset-0 bg-black">
             <Image
-              src="/hero/hero_notebook_repair.png"
+              src="/hero/hero_notebook_pro.png"
               alt="Manutenção Placa Mãe"
               fill
               quality={100}
