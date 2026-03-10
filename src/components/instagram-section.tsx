@@ -29,7 +29,7 @@ export function InstagramSection() {
                     </h2>
 
                     <p className="text-lg text-slate-400 mb-10 leading-relaxed max-w-2xl mx-auto">
-                        Veja fotos reais dos nossos processos, a organização da nossa estrutura técnica e o padrão de qualidade que aplicamos em cada equipamento. Transparência total.
+                        Veja fotos reais dos nossos processos, a organização da nossa estrutura e o padrão de qualidade que aplicamos em cada equipamento. Transparência total.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

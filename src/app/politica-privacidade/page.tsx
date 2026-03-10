@@ -37,7 +37,7 @@ export default function PoliticaPrivacidadePage() {
                         <ul className="list-disc list-inside text-slate-300 space-y-2 ml-4">
                             <li>Prestar os serviços de suporte e gestão de TI contratados</li>
                             <li>Entrar em contato sobre o status das solicitações</li>
-                            <li>Enviar propostas e documentação técnica relacionada</li>
+                            <li>Enviar propostas e documentação especializada relacionada</li>
                             <li>Melhorar nossos serviços e atendimento</li>
                         </ul>
                     </section>

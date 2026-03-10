@@ -72,7 +72,7 @@ export default function ServicesPage() {
                                 </div>
                                 <h3 className="text-xl font-bold text-white mb-3">Avaliação Estruturada</h3>
                                 <p className="text-slate-400 text-sm leading-relaxed px-4">
-                                    Analisamos a performance real. Se o serviço técnico não for viável operacionalmente, indicamos o panorama completo.
+                                    Analisamos a performance real. Se a otimização não for viável operacionalmente, indicamos o panorama completo.
                                 </p>
                             </div>
 
@@ -80,9 +80,9 @@ export default function ServicesPage() {
                                 <div className="w-16 h-16 mx-auto bg-slate-900 border border-slate-800 rounded-2xl flex items-center justify-center mb-6 shadow-xl shadow-primary/5">
                                     <span className="text-2xl font-bold text-primary">2</span>
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-3">Serviço Técnico</h3>
+                                <h3 className="text-xl font-bold text-white mb-3">Consultoria de IT</h3>
                                 <p className="text-slate-400 text-sm leading-relaxed px-4">
-                                    Alocamos componentes de alto padrão com precisão técnica. Revisão preventiva, gerenciamento estrutural de cabos e proteção do seu patrimônio em cada detalhe.
+                                    Alocamos componentes de alto padrão com precisão profissional. Revisão preventiva, gerenciamento estrutural de cabos e proteção do seu patrimônio em cada detalhe.
                                 </p>
                             </div>
 
@@ -221,7 +221,7 @@ export default function ServicesPage() {
                                     <ul className="space-y-3">
                                         <li className="flex gap-3 text-slate-300 text-sm">
                                             <CheckCircle2 className="w-5 h-5 text-pink-500 shrink-0" />
-                                            <span><strong>Cabeça de Impressão:</strong> Avaliação e desobstrução técnica.</span>
+                                            <span><strong>Cabeça de Impressão:</strong> Avaliação e desobstrução profissional.</span>
                                         </li>
                                         <li className="flex gap-3 text-slate-300 text-sm">
                                             <CheckCircle2 className="w-5 h-5 text-pink-500 shrink-0" />
@@ -242,7 +242,7 @@ export default function ServicesPage() {
                             <div className="order-1 md:order-2 bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl border border-white/5 aspect-square flex items-center justify-center relative overflow-hidden group shadow-2xl">
                                 <Image
                                     src="/services/printer-mt.png"
-                                    alt="Serviços técnicos de hardware de impressão"
+                                    alt="Soluções para hardware de impressão"
                                     fill
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                     className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
@@ -259,18 +259,18 @@ export default function ServicesPage() {
 
                     {/* FAQ */}
                     <section className="mt-32 pt-20 border-t border-white/5">
-                        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">Dúvidas sobre o Processo Técnico</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">Dúvidas sobre a Otimização</h2>
                         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                             <SpotlightCard className="p-6 rounded-2xl bg-slate-900/50 border-white/5">
                                 <h3 className="font-bold text-white mb-2">Quanto tempo demora?</h3>
-                                <p className="text-slate-400 text-sm">A maioria das baterias de testes em nossa estrutura técnica (otimização térmica, revisão física) é concluída entre 24h a 48h. E não se preocupe: oferecemos <strong>180 dias de garantia</strong> estrutural e técnica sobre a peça consertada.</p>
+                                <p className="text-slate-400 text-sm">A maioria das baterias de testes em nossa estrutura corporativa (otimização térmica, revisão física) é concluída entre 24h a 48h. E não se preocupe: oferecemos <strong>180 dias de garantia</strong> estrutural e de performance sobre os ajustes realizados.</p>
                             </SpotlightCard>
                             <SpotlightCard className="p-6 rounded-2xl bg-slate-900/50 border-white/5">
                                 <h3 className="font-bold text-white mb-2">Vocês buscam o equipamento?</h3>
                                 <p className="text-slate-400 text-sm">Sim, temos serviço de logística. Podemos retirar no seu local e devolver pronto. Consulte a taxa para sua região.</p>
                             </SpotlightCard>
                             <SpotlightCard className="p-6 rounded-2xl bg-slate-900/50 border-white/5">
-                                <h3 className="font-bold text-white mb-2">Valem a pena consertar meu PC antigo?</h3>
+                                <h3 className="font-bold text-white mb-2">Vale a pena otimizar meu PC antigo?</h3>
                                 <p className="text-slate-400 text-sm">Geralmente sim! Um SSD novo faz um computador de 5-7 anos parecer novo. Faremos uma análise honesta se compensa ou não.</p>
                             </SpotlightCard>
                         </div>
