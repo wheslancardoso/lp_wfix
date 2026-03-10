@@ -75,7 +75,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {/* Imagens de fundo alternadas (Fundo animado gerado por IA) */}
           <div className="absolute inset-0 bg-black">
             <Image
-              src="/hero/tech_repair_motherboard.png"
+              src="/hero/hero_notebook_repair.png"
               alt="Manutenção Placa Mãe"
               fill
               className="object-cover brightness-[0.5] contrast-[1.1] animate-hero-bg-1 opacity-0 absolute"
@@ -87,7 +87,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               }}
             />
             <Image
-              src="/hero/tech_repair_notebook.png"
+              src="/hero/hero_gamer_pc_repair.png"
               alt="Manutenção Interna Notebook"
               fill
               className="object-cover brightness-[0.5] contrast-[1.1] animate-hero-bg-2 opacity-0 absolute"
@@ -98,10 +98,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               }}
             />
             <Image
-              src="/hero/tech_repair_microscope.png"
+              src="/hero/hero_hardware_desk.png"
               alt="Microscopia Avançada"
               fill
-              className="object-cover brightness-[0.5] contrast-[1.1] animate-hero-bg-3 opacity-0 absolute"
+              className="object-cover brightness-[0.4] contrast-[1.1] animate-hero-bg-3 opacity-0 absolute"
               sizes="100vw"
               style={{
                 maskImage: 'linear-gradient(to top, transparent 0%, black 60%)',
