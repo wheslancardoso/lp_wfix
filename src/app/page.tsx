@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Instagram, MessageCircle, MapPin, Clock, ShieldCheck, Star } from 'lucide-react'
+import { Instagram, MessageCircle, MapPin, Clock, ShieldCheck, Star, Phone } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { AnimateIn } from '@/components/ui/animate-in'
 import Image from 'next/image'
@@ -155,15 +155,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             {/* Info Cards Compactos */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6">
-              <div className="bg-white/[0.03] border border-white/5 p-4 rounded-2xl flex items-center gap-4">
-                <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center shrink-0">
-                  <MessageCircle className="w-4 h-4 text-white/40" />
+              <a
+                href={`tel:+5562994516025`}
+                className="bg-white/[0.03] border border-white/5 hover:border-white/15 p-4 rounded-2xl flex items-center gap-4 transition-all duration-300 hover:-translate-y-0.5 group"
+              >
+                <div className="w-9 h-9 rounded-full bg-white/5 group-hover:bg-primary/10 flex items-center justify-center shrink-0 transition-colors">
+                  <Phone className="w-4 h-4 text-white/40 group-hover:text-primary transition-colors" />
                 </div>
                 <div>
                   <p className="text-[8px] font-black uppercase tracking-widest text-white/30">Ligar Agora</p>
                   <p className="text-[10px] font-bold text-white">{formattedPhone}</p>
                 </div>
-              </div>
+              </a>
 
               <div className="bg-white/[0.03] border border-white/5 p-4 rounded-2xl flex items-center gap-4">
                 <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center shrink-0">
@@ -266,8 +269,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           id="cta-whatsapp-float"
           href={whatsappLink}
           target="_blank"
-          className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:scale-110 transition-all duration-300 animate-in slide-in-from-bottom-10 fade-in delay-1000"
-          style={{ animation: 'pulse-whatsapp 2s infinite' }}
+          className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] rounded-full hover:scale-110 transition-all duration-300"
+          style={{ animation: 'pulse-whatsapp 2s ease-in-out infinite' }}
         >
           <MessageCircle className="w-7 h-7 text-white fill-white" />
         </a>
@@ -278,6 +281,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p className="text-[8px] md:text-[9px] font-bold uppercase tracking-[0.5em] text-white/20">
           {brandName} • Goiânia - GO • {new Date().getFullYear()}
         </p>
+        <div className="mt-5 flex items-center justify-center gap-5">
+          <a href={whatsappLink} target="_blank" className="w-8 h-8 rounded-full bg-white/5 hover:bg-green-500/20 flex items-center justify-center transition-colors" aria-label="WhatsApp">
+            <MessageCircle className="w-4 h-4 text-white/30 hover:text-green-400" />
+          </a>
+          <a href="https://instagram.com/wfixtech" target="_blank" className="w-8 h-8 rounded-full bg-white/5 hover:bg-pink-500/20 flex items-center justify-center transition-colors" aria-label="Instagram">
+            <Instagram className="w-4 h-4 text-white/30 hover:text-pink-400" />
+          </a>
+          <a href={`tel:+5562994516025`} className="w-8 h-8 rounded-full bg-white/5 hover:bg-primary/20 flex items-center justify-center transition-colors" aria-label="Ligar">
+            <Phone className="w-4 h-4 text-white/30 hover:text-primary" />
+          </a>
+        </div>
         <div className="mt-4 flex items-center justify-center gap-6 text-white/20">
           <Link href="/politica-privacidade" className="text-[8px] uppercase tracking-widest hover:text-white/40 transition-colors">Privacidade</Link>
           <Link href="/termos-uso" className="text-[8px] uppercase tracking-widest hover:text-white/40 transition-colors">Termos</Link>
