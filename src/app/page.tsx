@@ -180,14 +180,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <a
                   href="https://instagram.com/wfixtech"
                   target="_blank"
-                  className="card-3d card-glow-border-instagram group bg-white/[0.03] backdrop-blur-xl border border-pink-500/20 md:border-white/10 hover:border-pink-500/30 p-8 rounded-[30px] flex flex-col items-center text-center"
+                  className="card-3d card-glow-border-instagram group bg-white/[0.03] backdrop-blur-xl border border-pink-500/20 hover:border-pink-500/30 p-8 rounded-[30px] flex flex-col items-center text-center"
                 >
-                  <div className="w-16 h-16 bg-gradient-to-tr from-yellow-400/20 via-pink-500/20 to-purple-600/20 md:bg-none md:bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-gradient-to-tr group-hover:from-yellow-400/20 group-hover:via-pink-500/20 group-hover:to-purple-600/20 group-hover:shadow-[0_0_40px_rgba(236,72,153,0.4)] transition-all duration-500 animate-float-subtle" style={{ animationDelay: '1s' }}>
-                    <Instagram className="w-7 h-7 text-pink-400 md:text-white group-hover:text-pink-400 group-hover:scale-110 transition-all duration-300" />
+                  <div className="w-16 h-16 bg-gradient-to-tr from-yellow-400/20 via-pink-500/20 to-purple-600/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-gradient-to-tr group-hover:from-yellow-400/20 group-hover:via-pink-500/20 group-hover:to-purple-600/20 group-hover:shadow-[0_0_40px_rgba(236,72,153,0.4)] transition-all duration-500 animate-float-subtle" style={{ animationDelay: '1s' }}>
+                    <Instagram className="w-7 h-7 text-pink-400 group-hover:text-pink-400 group-hover:scale-110 transition-all duration-300" />
                   </div>
                   <h2 className="text-xl font-black uppercase mb-2 text-white">Instagram</h2>
                   <p className="text-[9px] uppercase font-bold tracking-widest text-white/30 mb-6">Conheça nosso trabalho</p>
-                  <span className="bg-gradient-to-r from-pink-500 to-purple-600 text-white md:bg-none md:bg-white md:text-black text-[9px] font-black px-6 py-2 rounded-full uppercase tracking-widest group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-600 group-hover:text-white transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]">
+                  <span className="bg-gradient-to-r from-pink-500 to-purple-600 text-white text-[9px] font-black px-6 py-2 rounded-full uppercase tracking-widest group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-600 group-hover:text-white transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]">
                     Seguir Perfil
                   </span>
                 </a>
