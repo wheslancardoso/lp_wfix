@@ -87,7 +87,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               }}
             />
             <Image
-              src="/hero/hero_gamer_pc_repair.png"
+              src="/hero/hero_gamer_pc_setup_v2.png"
               alt="Manutenção Interna Notebook"
               fill
               className="object-cover brightness-[0.5] contrast-[1.1] animate-hero-bg-2 opacity-0 absolute"
