@@ -75,8 +75,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {/* Imagens de fundo alternadas (Fundo animado gerado por IA) */}
           <div className="absolute inset-0 bg-black">
             <Image
-              src="/hero/hero_notebook_pro.png"
-              alt="Análise de Placa Mãe"
+              src="/hero/hero-01.png"
+              alt="Ambiente profissional WFIX"
               fill
               quality={100}
               className="object-cover object-[center_35%] md:object-[center_40%] brightness-[0.5] contrast-[1.1] md:blur-[2px] animate-hero-bg-1 opacity-0 absolute"
@@ -88,8 +88,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               }}
             />
             <Image
-              src="/hero/hero_gamer_pc_setup_v2.png"
-              alt="Otimização Interna Notebook"
+              src="/hero/hero-02.png"
+              alt="Espaço de trabalho premium"
               fill
               quality={100}
               className="object-cover object-center md:object-[center_30%] brightness-[0.5] contrast-[1.1] md:blur-[2px] animate-hero-bg-2 opacity-0 absolute"
@@ -100,8 +100,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               }}
             />
             <Image
-              src="/hero/hero_hardware_desk.png"
-              alt="Microscopia Avançada"
+              src="/hero/hero-03.png"
+              alt="Estrutura de alta performance"
               fill
               quality={100}
               className="object-cover object-[center_20%] md:object-[center_40%] brightness-[0.4] contrast-[1.1] md:blur-[2px] animate-hero-bg-3 opacity-0 absolute"
@@ -254,12 +254,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
               {[
-                { src: '/hero/notebook-desk.png', alt: 'Ambiente de trabalho' },
-                { src: '/hero/tools-tech.png', alt: 'Ferramentas profissionais' },
-                { src: '/hero/components-tech.png', alt: 'Componentes de Tecnologia' },
-                { src: '/services/safe-workspace-premium.png', alt: 'Equipamento Gamer' },
-                { src: '/services/printer-card.png', alt: 'Equipamento corporativo' },
-                { src: '/hero/pc-gamer-aesthetic.png', alt: 'Setup de alta performance' },
+                { src: '/hero/gallery-01.png', alt: 'Ambiente de trabalho' },
+                { src: '/hero/gallery-02.png', alt: 'Ferramentas profissionais' },
+                { src: '/hero/gallery-03.png', alt: 'Componentes de Tecnologia' },
+                { src: '/services/gallery-04.png', alt: 'Setup premium' },
+                { src: '/services/gallery-05.png', alt: 'Equipamento corporativo' },
+                { src: '/hero/gallery-06.png', alt: 'Setup de alta performance' },
               ].map((img, i) => (
                 <AnimateIn key={i} delay={0.1 * i}>
                   <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10 hover:border-white/25 transition-all duration-500 hover:shadow-[0_8px_40px_rgba(0,0,0,0.5)] card-3d">
