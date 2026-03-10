@@ -79,7 +79,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               alt="Manutenção Placa Mãe"
               fill
               quality={100}
-              className="object-cover object-[center_35%] md:object-[center_40%] brightness-[0.5] contrast-[1.1] animate-hero-bg-1 opacity-0 absolute"
+              className="object-cover object-[center_35%] md:object-[center_40%] brightness-[0.5] contrast-[1.1] blur-[2px] animate-hero-bg-1 opacity-0 absolute"
               sizes="100vw"
               priority
               style={{
@@ -92,7 +92,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               alt="Manutenção Interna Notebook"
               fill
               quality={100}
-              className="object-cover object-center md:object-[center_30%] brightness-[0.5] contrast-[1.1] animate-hero-bg-2 opacity-0 absolute"
+              className="object-cover object-center md:object-[center_30%] brightness-[0.5] contrast-[1.1] blur-[2px] animate-hero-bg-2 opacity-0 absolute"
               sizes="100vw"
               style={{
                 maskImage: 'linear-gradient(to top, transparent 0%, black 60%)',
@@ -104,7 +104,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               alt="Microscopia Avançada"
               fill
               quality={100}
-              className="object-cover object-[center_20%] md:object-[center_40%] brightness-[0.4] contrast-[1.1] animate-hero-bg-3 opacity-0 absolute"
+              className="object-cover object-[center_20%] md:object-[center_40%] brightness-[0.4] contrast-[1.1] blur-[2px] animate-hero-bg-3 opacity-0 absolute"
               sizes="100vw"
               style={{
                 maskImage: 'linear-gradient(to top, transparent 0%, black 60%)',
