@@ -89,9 +89,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </AnimateIn>
 
             <AnimateIn delay={0.2}>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.95] mb-4 text-white">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.95] mb-4">
                 Bem-vindo à <br />
-                <span className="text-primary">WFIX <span className="text-white">Tech.</span></span>
+                <span className="bg-gradient-to-r from-green-400 via-emerald-400 to-green-500 bg-clip-text text-transparent animate-gradient-text">WFIX Tech.</span>
               </h1>
             </AnimateIn>
 
@@ -102,7 +102,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </AnimateIn>
 
             <AnimateIn delay={0.4}>
-              <Button size="lg" className="h-14 px-10 text-base font-black uppercase tracking-widest rounded-full shadow-[0_0_25px_rgba(34,197,94,0.3)] bg-primary hover:bg-primary/90 text-primary-foreground transition-all transform hover:scale-105" asChild>
+              <Button size="lg" className="h-14 px-10 text-base font-black uppercase tracking-widest rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 transform hover:scale-105 animate-glow-green" asChild>
                 <Link href={whatsappLink} target="_blank" id="cta-whatsapp-hero">
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Iniciar Conversa
@@ -123,14 +123,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 href={whatsappLink}
                 target="_blank"
                 id="cta-whatsapp-card"
-                className="group bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-white/20 p-8 rounded-[30px] flex flex-col items-center text-center transition-all duration-400 hover:-translate-y-1"
+                className="group bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 p-8 rounded-[30px] flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_8px_40px_rgba(34,197,94,0.12)]"
               >
-                <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mb-6 shadow-[0_0_25px_rgba(34,197,94,0.3)]">
-                  <MessageCircle className="w-7 h-7 text-green-500 fill-green-500" />
+                <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mb-6 shadow-[0_0_25px_rgba(34,197,94,0.3)] group-hover:shadow-[0_0_40px_rgba(34,197,94,0.5)] transition-shadow duration-500">
+                  <MessageCircle className="w-7 h-7 text-green-500 fill-green-500 group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h2 className="text-xl font-black uppercase mb-2 text-white">WhatsApp</h2>
                 <p className="text-[9px] uppercase font-bold tracking-widest text-white/30 mb-6">Resposta em até 3 min</p>
-                <span className="bg-white text-black text-[9px] font-black px-6 py-2 rounded-full uppercase tracking-widest">
+                <span className="bg-white text-black text-[9px] font-black px-6 py-2 rounded-full uppercase tracking-widest group-hover:bg-green-500 group-hover:text-white transition-colors duration-300">
                   Iniciar Conversa
                 </span>
               </Link>
@@ -139,14 +139,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a
                 href="https://instagram.com/wfixtech"
                 target="_blank"
-                className="group bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-white/20 p-8 rounded-[30px] flex flex-col items-center text-center transition-all duration-400 hover:-translate-y-1"
+                className="group bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-pink-500/30 p-8 rounded-[30px] flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_8px_40px_rgba(236,72,153,0.12)]"
               >
-                <div className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-6">
-                  <Instagram className="w-7 h-7 text-white" />
+                <div className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-gradient-to-tr group-hover:from-yellow-400/20 group-hover:via-pink-500/20 group-hover:to-purple-600/20 transition-all duration-500">
+                  <Instagram className="w-7 h-7 text-white group-hover:text-pink-400 group-hover:scale-110 transition-all duration-300" />
                 </div>
                 <h2 className="text-xl font-black uppercase mb-2 text-white">Instagram</h2>
                 <p className="text-[9px] uppercase font-bold tracking-widest text-white/30 mb-6">Conheça nosso trabalho</p>
-                <span className="bg-white text-black text-[9px] font-black px-6 py-2 rounded-full uppercase tracking-widest">
+                <span className="bg-white text-black text-[9px] font-black px-6 py-2 rounded-full uppercase tracking-widest group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-600 group-hover:text-white transition-all duration-300">
                   Seguir Perfil
                 </span>
               </a>
@@ -155,22 +155,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             {/* Info Cards Compactos */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6">
-              <a
-                href={`tel:+5562994516025`}
-                className="bg-white/[0.03] border border-white/5 hover:border-white/15 p-4 rounded-2xl flex items-center gap-4 transition-all duration-300 hover:-translate-y-0.5 group"
-              >
-                <div className="w-9 h-9 rounded-full bg-white/5 group-hover:bg-primary/10 flex items-center justify-center shrink-0 transition-colors">
-                  <Phone className="w-4 h-4 text-white/40 group-hover:text-primary transition-colors" />
+              <div className="group bg-white/[0.03] border border-white/5 hover:border-white/10 p-4 rounded-2xl flex items-center gap-4 transition-all duration-300">
+                <div className="w-9 h-9 rounded-full bg-white/5 group-hover:bg-primary/10 flex items-center justify-center shrink-0 transition-colors duration-300">
+                  <Phone className="w-4 h-4 text-white/40 group-hover:text-primary transition-colors duration-300" />
                 </div>
                 <div>
                   <p className="text-[8px] font-black uppercase tracking-widest text-white/30">Ligar Agora</p>
                   <p className="text-[10px] font-bold text-white">{formattedPhone}</p>
                 </div>
-              </a>
+              </div>
 
-              <div className="bg-white/[0.03] border border-white/5 p-4 rounded-2xl flex items-center gap-4">
-                <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center shrink-0">
-                  <Clock className="w-4 h-4 text-white/40" />
+              <div className="group bg-white/[0.03] border border-white/5 hover:border-white/10 p-4 rounded-2xl flex items-center gap-4 transition-all duration-300">
+                <div className="w-9 h-9 rounded-full bg-white/5 group-hover:bg-blue-500/10 flex items-center justify-center shrink-0 transition-colors duration-300">
+                  <Clock className="w-4 h-4 text-white/40 group-hover:text-blue-400 transition-colors duration-300" />
                 </div>
                 <div>
                   <p className="text-[8px] font-black uppercase tracking-widest text-white/30">Horário</p>
@@ -178,9 +175,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
               </div>
 
-              <div className="bg-white/[0.03] border border-white/5 p-4 rounded-2xl flex items-center gap-4 sm:col-span-1">
-                <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center shrink-0">
-                  <MapPin className="w-4 h-4 text-white/40" />
+              <div className="group bg-white/[0.03] border border-white/5 hover:border-white/10 p-4 rounded-2xl flex items-center gap-4 sm:col-span-1 transition-all duration-300">
+                <div className="w-9 h-9 rounded-full bg-white/5 group-hover:bg-red-500/10 flex items-center justify-center shrink-0 transition-colors duration-300">
+                  <MapPin className="w-4 h-4 text-white/40 group-hover:text-red-400 transition-colors duration-300" />
                 </div>
                 <div>
                   <p className="text-[8px] font-black uppercase tracking-widest text-white/30">Localização</p>
@@ -204,28 +201,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
               {/* Cada card de imagem — sem texto revelador */}
-              <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10">
-                <Image src="/hero/notebook-desk.png" alt="Ambiente de trabalho" fill className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-90" sizes="(max-width: 768px) 50vw, 33vw" />
+              <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+                <Image src="/hero/notebook-desk.png" alt="Ambiente de trabalho" fill className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-90 group-hover:brightness-100" sizes="(max-width: 768px) 50vw, 33vw" />
               </div>
 
-              <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10">
-                <Image src="/hero/tools-tech.png" alt="Ferramentas profissionais" fill className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-90" sizes="(max-width: 768px) 50vw, 33vw" />
+              <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+                <Image src="/hero/tools-tech.png" alt="Ferramentas profissionais" fill className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-90 group-hover:brightness-100" sizes="(max-width: 768px) 50vw, 33vw" />
               </div>
 
-              <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10">
-                <Image src="/hero/components-tech.png" alt="Componentes de Tecnologia" fill className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-90" sizes="(max-width: 768px) 50vw, 33vw" />
+              <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+                <Image src="/hero/components-tech.png" alt="Componentes de Tecnologia" fill className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-90 group-hover:brightness-100" sizes="(max-width: 768px) 50vw, 33vw" />
               </div>
 
-              <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10">
-                <Image src="/services/safe-workspace-premium.png" alt="Equipamento Gamer" fill className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-90" sizes="(max-width: 768px) 50vw, 33vw" />
+              <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+                <Image src="/services/safe-workspace-premium.png" alt="Equipamento Gamer" fill className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-90 group-hover:brightness-100" sizes="(max-width: 768px) 50vw, 33vw" />
               </div>
 
-              <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10">
-                <Image src="/services/printer-card.png" alt="Equipamento corporativo" fill className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-90" sizes="(max-width: 768px) 50vw, 33vw" />
+              <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+                <Image src="/services/printer-card.png" alt="Equipamento corporativo" fill className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-90 group-hover:brightness-100" sizes="(max-width: 768px) 50vw, 33vw" />
               </div>
 
-              <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10">
-                <Image src="/hero/pc-gamer-aesthetic.png" alt="Setup de alta performance" fill className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-90" sizes="(max-width: 768px) 50vw, 33vw" />
+              <div className="group relative aspect-square rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+                <Image src="/hero/pc-gamer-aesthetic.png" alt="Setup de alta performance" fill className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-90 group-hover:brightness-100" sizes="(max-width: 768px) 50vw, 33vw" />
               </div>
             </div>
           </div>
@@ -239,23 +236,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p className="text-[10px] md:text-xs uppercase tracking-[0.4em] mb-12 md:mb-16 font-bold text-white/30 italic">Estrutura, qualidade e atendimento</p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-              <div className="bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] p-8 md:p-10 rounded-3xl relative overflow-hidden">
+              <div className="group bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] hover:border-primary/20 p-8 md:p-10 rounded-3xl relative overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_40px_rgba(34,197,94,0.08)]">
                 <span className="absolute -top-2 -right-2 text-white/5 text-7xl font-black italic">01</span>
-                <MapPin className="w-12 h-12 md:w-14 md:h-14 mb-6 text-primary mx-auto" />
+                <MapPin className="w-12 h-12 md:w-14 md:h-14 mb-6 text-primary mx-auto group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-lg md:text-xl font-black mb-3 uppercase">Presença Local</h3>
                 <p className="text-sm text-white/60 leading-relaxed">Atuação em Goiânia e região, com estrutura física para facilitar o contato.</p>
               </div>
 
-              <div className="bg-white/[0.03] backdrop-blur-xl border border-primary/20 p-8 md:p-10 rounded-3xl relative overflow-hidden">
+              <div className="group bg-white/[0.03] backdrop-blur-xl border border-primary/20 hover:border-primary/40 p-8 md:p-10 rounded-3xl relative overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_40px_rgba(34,197,94,0.12)]">
                 <span className="absolute -top-2 -right-2 text-white/5 text-7xl font-black italic">02</span>
-                <ShieldCheck className="w-12 h-12 md:w-14 md:h-14 mb-6 text-primary mx-auto" />
+                <ShieldCheck className="w-12 h-12 md:w-14 md:h-14 mb-6 text-primary mx-auto group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-lg md:text-xl font-black mb-3 uppercase">Garantia de 180 dias</h3>
                 <p className="text-sm text-white/60 leading-relaxed">Confiança total no que fazemos. Todos os trabalhos com garantia estendida.</p>
               </div>
 
-              <div className="bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] p-8 md:p-10 rounded-3xl relative overflow-hidden">
+              <div className="group bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] hover:border-green-500/20 p-8 md:p-10 rounded-3xl relative overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_40px_rgba(34,197,94,0.08)]">
                 <span className="absolute -top-2 -right-2 text-white/5 text-7xl font-black italic">03</span>
-                <Star className="w-12 h-12 md:w-14 md:h-14 mb-6 text-green-500 mx-auto" />
+                <Star className="w-12 h-12 md:w-14 md:h-14 mb-6 text-green-500 mx-auto group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-lg md:text-xl font-black mb-3 uppercase">Atendimento Rápido</h3>
                 <p className="text-sm text-white/60 leading-relaxed italic">Canal direto pelo WhatsApp. Resposta e orçamento sem enrolação.</p>
               </div>
@@ -282,14 +279,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {brandName} • Goiânia - GO • {new Date().getFullYear()}
         </p>
         <div className="mt-5 flex items-center justify-center gap-5">
-          <a href={whatsappLink} target="_blank" className="w-8 h-8 rounded-full bg-white/5 hover:bg-green-500/20 flex items-center justify-center transition-colors" aria-label="WhatsApp">
-            <MessageCircle className="w-4 h-4 text-white/30 hover:text-green-400" />
+          <a href={whatsappLink} target="_blank" className="w-8 h-8 rounded-full bg-white/5 hover:bg-green-500/20 flex items-center justify-center transition-colors duration-300" aria-label="WhatsApp">
+            <MessageCircle className="w-4 h-4 text-white/30 hover:text-green-400 transition-colors duration-300" />
           </a>
-          <a href="https://instagram.com/wfixtech" target="_blank" className="w-8 h-8 rounded-full bg-white/5 hover:bg-pink-500/20 flex items-center justify-center transition-colors" aria-label="Instagram">
-            <Instagram className="w-4 h-4 text-white/30 hover:text-pink-400" />
+          <a href="https://instagram.com/wfixtech" target="_blank" className="w-8 h-8 rounded-full bg-white/5 hover:bg-pink-500/20 flex items-center justify-center transition-colors duration-300" aria-label="Instagram">
+            <Instagram className="w-4 h-4 text-white/30 hover:text-pink-400 transition-colors duration-300" />
           </a>
-          <a href={`tel:+5562994516025`} className="w-8 h-8 rounded-full bg-white/5 hover:bg-primary/20 flex items-center justify-center transition-colors" aria-label="Ligar">
-            <Phone className="w-4 h-4 text-white/30 hover:text-primary" />
+          <a href={`tel:+5562994516025`} className="w-8 h-8 rounded-full bg-white/5 hover:bg-primary/20 flex items-center justify-center transition-colors duration-300" aria-label="Ligar">
+            <Phone className="w-4 h-4 text-white/30 hover:text-primary transition-colors duration-300" />
           </a>
         </div>
         <div className="mt-4 flex items-center justify-center gap-6 text-white/20">
