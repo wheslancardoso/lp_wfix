@@ -25,7 +25,7 @@ export default function PoliticaPrivacidadePage() {
                     <section className="space-y-4">
                         <h2 className="text-xl font-semibold text-white">1. Informações que coletamos</h2>
                         <p className="text-slate-300 leading-relaxed">
-                            Coletamos informações que você nos fornece diretamente, como nome, telefone, e-mail e dados sobre seu equipamento quando você solicita uma proposta ou serviço de suporte corporativo.
+                            Coletamos informações que você nos fornece diretamente, como nome, telefone, e-mail e dados sobre seu equipamento quando você solicita uma proposta ou serviço de consultoria corporativa.
                         </p>
                     </section>
 
@@ -35,7 +35,7 @@ export default function PoliticaPrivacidadePage() {
                             Utilizamos suas informações para:
                         </p>
                         <ul className="list-disc list-inside text-slate-300 space-y-2 ml-4">
-                            <li>Prestar os serviços de suporte e gestão de TI contratados</li>
+                            <li>Prestar os serviços de consultoria e gestão de TI contratados</li>
                             <li>Entrar em contato sobre o status das solicitações</li>
                             <li>Enviar propostas e documentação especializada relacionada</li>
                             <li>Melhorar nossos serviços e atendimento</li>

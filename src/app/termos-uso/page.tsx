@@ -25,14 +25,14 @@ export default function TermosUsoPage() {
                     <section className="space-y-4">
                         <h2 className="text-xl font-semibold text-white">1. Aceitação dos Termos</h2>
                         <p className="text-slate-300 leading-relaxed">
-                            Ao utilizar nossos serviços de gestão e suporte de TI, você concorda com estes Termos de Uso. Se não concordar com algum termo, recomendamos que não utilize nossos serviços.
+                            Ao utilizar nossos serviços de gestão e consultoria de TI, você concorda com estes Termos de Uso. Se não concordar com algum termo, recomendamos que não utilize nossos serviços.
                         </p>
                     </section>
 
                     <section className="space-y-4">
                         <h2 className="text-xl font-semibold text-white">2. Serviços Oferecidos</h2>
                         <p className="text-slate-300 leading-relaxed">
-                            A WFIX Tech oferece serviços de gestão de ativos para computadores, notebooks e impressoras, incluindo diagnóstico, monitoramento, consultoria e atualização de infraestrutura.
+                            A WFIX Tech oferece serviços de gestão de ativos para computadores, notebooks e impressoras, incluindo análise, monitoramento, consultoria e atualização de infraestrutura.
                         </p>
                     </section>
 
@@ -46,7 +46,7 @@ export default function TermosUsoPage() {
                     <section className="space-y-4">
                         <h2 className="text-xl font-semibold text-white">4. Garantia</h2>
                         <p className="text-slate-300 leading-relaxed">
-                            Os serviços prestados possuem garantia conforme especificado no termo de garantia emitido junto com a ordem de serviço. A garantia cobre defeitos relacionados ao serviço realizado.
+                            Os serviços prestados possuem garantia conforme especificado no termo de garantia emitido junto com a proposta comercial. A garantia cobre inconsistências relacionadas ao serviço realizado.
                         </p>
                     </section>
 

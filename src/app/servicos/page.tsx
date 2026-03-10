@@ -184,7 +184,7 @@ export default function ServicesPage() {
                                         </li>
                                         <li className="flex gap-3 text-slate-300 text-sm">
                                             <CheckCircle2 className="w-5 h-5 text-blue-500 shrink-0" />
-                                            <span><strong>Mapeamento de Falhas:</strong> Diagnósticos laboratoriais completos.</span>
+                                            <span><strong>Mapeamento de Falhas:</strong> Análises laboratoriais completas.</span>
                                         </li>
                                         <li className="flex gap-3 text-slate-300 text-sm">
                                             <CheckCircle2 className="w-5 h-5 text-blue-500 shrink-0" />

@@ -2,7 +2,7 @@
 // Database Types - Schema V2.0 (Compra Assistida)
 // ==================================================
 
-// Enum de status de ordem de serviço
+// Enum de status de OS
 export type OrderStatus =
     | 'open'
     | 'analyzing'

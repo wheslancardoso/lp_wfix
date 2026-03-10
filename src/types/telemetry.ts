@@ -25,7 +25,7 @@ export interface HardwareTelemetry {
     ram_slots?: number
 
     // Temperature Comparison
-    stage?: 'initial' | 'post_repair' | 'final'
+    stage?: 'initial' | 'post_service' | 'final'
 
     // Parsing Audit
     health_score?: number
@@ -57,7 +57,7 @@ export interface TelemetryInsert {
     ram_slots?: number
 
     // Temperature Comparison
-    stage?: 'initial' | 'post_repair' | 'final'
+    stage?: 'initial' | 'post_service' | 'final'
 
     health_score?: number
     raw_content?: string
