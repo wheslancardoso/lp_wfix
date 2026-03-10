@@ -216,7 +216,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   </div>
                   <div>
                     <p className="text-[8px] font-black uppercase tracking-widest text-white/30">Horário</p>
-                    <p className="text-[10px] font-bold text-white">Seg-Dom 08h-18h</p>
+                    <p className="text-[9px] font-bold text-white whitespace-nowrap">Seg-Sex 08h-18h | Sáb-Dom 09h-14h</p>
                   </div>
                 </div>
               </AnimateIn>
