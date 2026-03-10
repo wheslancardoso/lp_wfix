@@ -734,6 +734,38 @@ body {
   }
 }
 
+@keyframes hero-bg-fade {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  10%,
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+
+.animate-hero-bg-1 {
+  animation: hero-bg-fade 15s infinite 0s;
+}
+
+.animate-hero-bg-2 {
+  animation: hero-bg-fade 15s infinite 5s;
+}
+
+.animate-hero-bg-3 {
+  animation: hero-bg-fade 15s infinite 10s;
+}
+
 .animate-gradient-text {
   background-size: 200% 200%;
   animation: gradient-shift 4s ease-in-out infinite;

@@ -72,15 +72,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         {/* HERO — Imagem de Fundo Full + Headline Genérica */}
         <section className="relative min-h-[75vh] md:min-h-[85vh] flex items-end justify-center overflow-hidden">
-          {/* Imagem de fundo */}
-          <div className="absolute inset-0">
+          {/* Imagens de fundo alternadas (Fundo animado gerado por IA) */}
+          <div className="absolute inset-0 bg-black">
             <Image
-              src="/hero/notebook-desk.png"
-              alt="Ambiente profissional"
+              src="/hero/tech_repair_motherboard.png"
+              alt="Manutenção Placa Mãe"
               fill
-              className="object-cover brightness-[0.5] contrast-[1.1]"
+              className="object-cover brightness-[0.5] contrast-[1.1] animate-hero-bg-1 opacity-0 absolute"
               sizes="100vw"
               priority
+              style={{
+                maskImage: 'linear-gradient(to top, transparent 0%, black 60%)',
+                WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 60%)',
+              }}
+            />
+            <Image
+              src="/hero/tech_repair_notebook.png"
+              alt="Manutenção Interna Notebook"
+              fill
+              className="object-cover brightness-[0.5] contrast-[1.1] animate-hero-bg-2 opacity-0 absolute"
+              sizes="100vw"
+              style={{
+                maskImage: 'linear-gradient(to top, transparent 0%, black 60%)',
+                WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 60%)',
+              }}
+            />
+            <Image
+              src="/hero/tech_repair_microscope.png"
+              alt="Microscopia Avançada"
+              fill
+              className="object-cover brightness-[0.5] contrast-[1.1] animate-hero-bg-3 opacity-0 absolute"
+              sizes="100vw"
               style={{
                 maskImage: 'linear-gradient(to top, transparent 0%, black 60%)',
                 WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 60%)',
