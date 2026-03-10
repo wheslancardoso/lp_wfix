@@ -1,6 +1,6 @@
 export type TelemetrySource = 'crystaldisk' | 'hwinfo' | 'hwmonitor' | 'manual'
 
-export interface HardwareTelemetry {
+export interface AssetTelemetry {
     id: string
     order_id: string
     equipment_id: string

@@ -32,7 +32,7 @@ export default function TermosUsoPage() {
                     <section className="space-y-4">
                         <h2 className="text-xl font-semibold text-white">2. Serviços Oferecidos</h2>
                         <p className="text-slate-300 leading-relaxed">
-                            A WFIX Tech oferece serviços de gestão de ativos para computadores, notebooks e impressoras, incluindo análise, monitoramento, consultoria e atualização de infraestrutura.
+                            A WFIX Tech oferece serviços de gestão de ativos para infraestrutura tecnológica e endpoints, incluindo análise, monitoramento, consultoria e atualização de infraestrutura.
                         </p>
                     </section>
 
@@ -53,7 +53,7 @@ export default function TermosUsoPage() {
                     <section className="space-y-4">
                         <h2 className="text-xl font-semibold text-white">5. Responsabilidades do Cliente</h2>
                         <p className="text-slate-300 leading-relaxed">
-                            O cliente é responsável por fornecer informações corretas sobre o equipamento e a solicitação, assim como realizar backup de seus dados antes de entregar o equipamento para análise corporativa.
+                            O cliente é responsável por fornecer informações corretas sobre a solicitação, assim como realizar backup de seus dados corporativos antes de disponibilizar a infraestrutura para análise corporativa.
                         </p>
                     </section>
 

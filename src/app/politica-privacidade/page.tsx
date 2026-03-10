@@ -52,7 +52,7 @@ export default function PoliticaPrivacidadePage() {
                     <section className="space-y-4">
                         <h2 className="text-xl font-semibold text-white">4. Compartilhamento de informações</h2>
                         <p className="text-slate-300 leading-relaxed">
-                            Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros para fins de marketing. Podemos compartilhar informações quando necessário para a prestação do serviço (ex: logística de hardware) ou quando exigido por lei.
+                            Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros para fins de marketing. Podemos compartilhar informações quando necessário para a prestação do serviço (ex: logística de ativos de TI) ou quando exigido por lei.
                         </p>
                     </section>
 
