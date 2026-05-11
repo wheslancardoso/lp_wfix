@@ -70,8 +70,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       <main className="flex-1 pt-16 relative z-[2]">
 
-        {/* HERO — Imagem de Fundo Full + Headline Genérica */}
-        <section className="relative min-h-[75vh] md:min-h-[85vh] flex items-end justify-center overflow-hidden">
+        {/* HERO — Centralizada e Compacta */}
+        <section className="relative min-h-[60vh] md:min-h-[75vh] flex flex-col items-center justify-center pt-24 pb-12 overflow-hidden">
           {/* Imagens de fundo alternadas (Fundo animado gerado por IA) */}
           <div className="absolute inset-0 bg-black">
             <Image
@@ -115,9 +115,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
 
           {/* Glow atrás do texto */}
-          <div className="absolute bottom-[20%] left-1/2 -translate-x-1/2 w-[300px] h-[150px] md:w-[600px] md:h-[300px] bg-green-500/10 rounded-full blur-[60px] md:blur-[100px] pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[800px] md:h-[400px] bg-green-500/10 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
 
-          <div className="relative z-10 max-w-4xl mx-auto px-4 pb-12 md:pb-20 text-center">
+          <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
             <AnimateIn delay={0.1}>
               <p className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.5em] text-white/50 mb-4">
                 Sua Referência em Goiânia
@@ -138,13 +138,53 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </AnimateIn>
 
             <AnimateIn delay={0.4}>
-              <Button size="lg" id="cta-whatsapp-hero" className="h-14 px-10 text-base font-black uppercase tracking-widest rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 transform hover:scale-105 animate-glow-green" asChild>
+              <Button size="lg" id="cta-whatsapp-hero" className="h-14 px-10 text-base font-black uppercase tracking-widest rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 transform hover:scale-105 animate-glow-green mb-16" asChild>
                 <Link href={whatsappLink} target="_blank">
                   <MessageCircle className="mr-2 h-5 w-5 pointer-events-none" />
                   <span className="pointer-events-none">Iniciar Conversa</span>
                 </Link>
               </Button>
             </AnimateIn>
+
+          </div>
+        </section>
+
+        {/* Glow Line Separator */}
+        <GlowLine />
+
+        {/* SEÇÃO VISUAL — Infográficos de Processo e Serviços */}
+        <section className="py-10 md:py-20 relative overflow-hidden">
+          <div className="max-w-[1600px] mx-auto px-4 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+              
+              {/* Card Como Funciona */}
+              <AnimateIn delay={0.1}>
+                <div className="group relative aspect-video rounded-[30px] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 transition-all duration-500 card-3d flex items-center justify-center">
+                  <Image 
+                    src="/services/infografico-processo.png" 
+                    alt="Processo de Atendimento" 
+                    fill 
+                    className="object-contain p-2 md:p-4 group-hover:scale-[1.02] transition-transform duration-700 rounded-2xl"
+                  />
+                  {/* Overlay sutil para manter o estilo glass */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
+                </div>
+              </AnimateIn>
+
+              {/* Card Resumo de Serviços */}
+              <AnimateIn delay={0.2}>
+                <div className="group relative aspect-video rounded-[30px] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 transition-all duration-500 card-3d flex items-center justify-center">
+                  <Image 
+                    src="/services/resumo-servicos.png" 
+                    alt="Resumo de Serviços" 
+                    fill 
+                    className="object-contain p-2 md:p-4 group-hover:scale-[1.02] transition-transform duration-700 rounded-2xl"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
+                </div>
+              </AnimateIn>
+
+            </div>
           </div>
         </section>
 
