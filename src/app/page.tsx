@@ -165,12 +165,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   alt="Processo de Atendimento"
                   className="rounded-[30px]"
                 >
-                  <div className="group relative aspect-[4/3] md:aspect-video rounded-[30px] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 transition-all duration-500 card-3d flex items-center justify-center w-full">
+                  <div className="group relative aspect-video rounded-[30px] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 transition-all duration-500 card-3d flex items-center justify-center w-full">
                     <Image 
                       src="/services/infografico-processo.webp" 
                       alt="Processo de Atendimento" 
                       fill 
-                      className="object-cover md:object-contain p-0 md:p-4 group-hover:scale-[1.05] transition-transform duration-700"
+                      className="object-contain p-0 md:p-4 group-hover:scale-[1.05] transition-transform duration-700"
                     />
                     {/* Overlay sutil para manter o estilo glass */}
                     <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
@@ -185,12 +185,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   alt="Resumo de Serviços"
                   className="rounded-[30px]"
                 >
-                  <div className="group relative aspect-[4/3] md:aspect-video rounded-[30px] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 transition-all duration-500 card-3d flex items-center justify-center w-full">
+                  <div className="group relative aspect-video rounded-[30px] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 transition-all duration-500 card-3d flex items-center justify-center w-full">
                     <Image 
                       src="/services/resumo-servicos.webp" 
                       alt="Resumo de Serviços" 
                       fill 
-                      className="object-cover md:object-contain p-0 md:p-4 group-hover:scale-[1.05] transition-transform duration-700"
+                      className="object-contain p-0 md:p-4 group-hover:scale-[1.05] transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
                   </div>
