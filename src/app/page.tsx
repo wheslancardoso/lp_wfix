@@ -170,7 +170,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       src="/services/infografico-processo.png" 
                       alt="Processo de Atendimento" 
                       fill 
-                      className="object-contain p-0 md:p-4 group-hover:scale-[1.02] transition-transform duration-700"
+                      className="object-cover md:object-contain p-0 md:p-4 group-hover:scale-[1.05] transition-transform duration-700"
                     />
                     {/* Overlay sutil para manter o estilo glass */}
                     <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
@@ -190,7 +190,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       src="/services/resumo-servicos.png" 
                       alt="Resumo de Serviços" 
                       fill 
-                      className="object-contain p-0 md:p-4 group-hover:scale-[1.02] transition-transform duration-700"
+                      className="object-cover md:object-contain p-0 md:p-4 group-hover:scale-[1.05] transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
                   </div>
