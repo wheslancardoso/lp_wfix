@@ -48,4 +48,5 @@ next-env.d.ts
 supabase/.temp
 # Backup de páginas da main
 backup-main-pages/
-
+_lp2
+_lp3
