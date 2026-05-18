@@ -161,13 +161,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               {/* Card Como Funciona */}
               <AnimateIn delay={0.1}>
                 <ImageModal 
-                  src="/services/infografico-processo.png" 
+                  src="/services/infografico-processo.webp" 
                   alt="Processo de Atendimento"
                   className="rounded-[30px]"
                 >
                   <div className="group relative aspect-[4/3] md:aspect-video rounded-[30px] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 transition-all duration-500 card-3d flex items-center justify-center w-full">
                     <Image 
-                      src="/services/infografico-processo.png" 
+                      src="/services/infografico-processo.webp" 
                       alt="Processo de Atendimento" 
                       fill 
                       className="object-cover md:object-contain p-0 md:p-4 group-hover:scale-[1.05] transition-transform duration-700"
@@ -181,13 +181,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               {/* Card Resumo de Serviços */}
               <AnimateIn delay={0.2}>
                 <ImageModal 
-                  src="/services/resumo-servicos.png" 
+                  src="/services/resumo-servicos.webp" 
                   alt="Resumo de Serviços"
                   className="rounded-[30px]"
                 >
                   <div className="group relative aspect-[4/3] md:aspect-video rounded-[30px] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 transition-all duration-500 card-3d flex items-center justify-center w-full">
                     <Image 
-                      src="/services/resumo-servicos.png" 
+                      src="/services/resumo-servicos.webp" 
                       alt="Resumo de Serviços" 
                       fill 
                       className="object-cover md:object-contain p-0 md:p-4 group-hover:scale-[1.05] transition-transform duration-700"
