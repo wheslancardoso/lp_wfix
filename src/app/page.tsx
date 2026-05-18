@@ -71,7 +71,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <main className="flex-1 pt-16 relative z-[2]">
 
         {/* HERO — Centralizada e Compacta */}
-        <section className="relative min-h-[60vh] md:min-h-[75vh] flex flex-col items-center justify-center pt-24 pb-12 overflow-hidden">
+        <section className="relative min-h-[60vh] md:min-h-[75vh] flex flex-col items-center justify-center pt-24 pb-4 md:pb-12 overflow-hidden">
           {/* Imagens de fundo alternadas (Fundo animado gerado por IA) */}
           <div className="absolute inset-0 bg-black">
             <Image
@@ -138,7 +138,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </AnimateIn>
 
             <AnimateIn delay={0.4}>
-              <Button size="lg" id="cta-whatsapp-hero" className="h-14 px-10 text-base font-black uppercase tracking-widest rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 transform hover:scale-105 animate-glow-green mb-16" asChild>
+              <Button size="lg" id="cta-whatsapp-hero" className="h-14 px-10 text-base font-black uppercase tracking-widest rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 transform hover:scale-105 animate-glow-green mb-6 md:mb-16" asChild>
                 <Link href={whatsappLink} target="_blank">
                   <MessageCircle className="mr-2 h-5 w-5 pointer-events-none" />
                   <span className="pointer-events-none">Iniciar Conversa</span>
@@ -153,18 +153,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <GlowLine />
 
         {/* SEÇÃO VISUAL — Infográficos de Processo e Serviços */}
-        <section className="py-10 md:py-20 relative overflow-hidden">
+        <section className="py-6 md:py-20 relative overflow-hidden">
           <div className="max-w-[1600px] mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
               
               {/* Card Como Funciona */}
               <AnimateIn delay={0.1}>
-                <div className="group relative aspect-video rounded-[30px] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 transition-all duration-500 card-3d flex items-center justify-center">
+                <div className="group relative aspect-[4/3] md:aspect-video rounded-[30px] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 transition-all duration-500 card-3d flex items-center justify-center">
                   <Image 
                     src="/services/infografico-processo.png" 
                     alt="Processo de Atendimento" 
                     fill 
-                    className="object-contain p-2 md:p-4 group-hover:scale-[1.02] transition-transform duration-700 rounded-2xl"
+                    className="object-contain p-1 md:p-4 group-hover:scale-[1.02] transition-transform duration-700 rounded-2xl"
                   />
                   {/* Overlay sutil para manter o estilo glass */}
                   <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
@@ -173,12 +173,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
               {/* Card Resumo de Serviços */}
               <AnimateIn delay={0.2}>
-                <div className="group relative aspect-video rounded-[30px] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 transition-all duration-500 card-3d flex items-center justify-center">
+                <div className="group relative aspect-[4/3] md:aspect-video rounded-[30px] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/30 transition-all duration-500 card-3d flex items-center justify-center">
                   <Image 
                     src="/services/resumo-servicos.png" 
                     alt="Resumo de Serviços" 
                     fill 
-                    className="object-contain p-2 md:p-4 group-hover:scale-[1.02] transition-transform duration-700 rounded-2xl"
+                    className="object-contain p-1 md:p-4 group-hover:scale-[1.02] transition-transform duration-700 rounded-2xl"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
                 </div>
